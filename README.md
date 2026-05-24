@@ -2,7 +2,7 @@
 
 This repository is designed for new FiveM server owners who are just getting started with QB-Core and server configuration.
 
-At first, this file may look overwhelming — that’s normal.
+At first, this file may look overwhelming — that's normal.
 
 You are seeing a full server.cfg template, which controls how your FiveM server starts, what resources load, and how everything connects together.
 
@@ -10,7 +10,7 @@ You are seeing a full server.cfg template, which controls how your FiveM server 
 
 If this is your first time setting up a server:
 
-Don’t panic if it feels confusing.
+Don't panic if it feels confusing.
 
 You do NOT need to understand everything at once.
 
@@ -63,4 +63,18 @@ This file is meant to be a learning tool and starting point.
 
 Take your time, make changes slowly, and test often.
 
-Once you understand this structure, you’ll be able to build and customize full FiveM servers with confidence.
+Once you understand this structure, you'll be able to build and customize full FiveM servers with confidence.
+
+---
+
+## Support This Project
+
+<script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
+<script>
+  kofiWidgetOverlay.draw('realitysucksrp', {
+    'type': 'floating-chat',
+    'floating-chat.donateButton.text': 'Support me',
+    'floating-chat.donateButton.background-color': '#fcbf47',
+    'floating-chat.donateButton.text-color': '#323842'
+  });
+</script>
