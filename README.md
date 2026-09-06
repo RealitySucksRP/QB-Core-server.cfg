@@ -64,18 +64,18 @@ ensure qb-target
 ensure your-resource
 ```
 
-## Want Me To Build The Server?
+## Complete FiveM Servers For Sale
 
-I also offer complete server builds using tested RealitySucksRP systems and configure them around the owner's preferred gameplay style and stack.
+I love making scripts and running wild in GTA, but I also enjoy building complete servers. I use tested RealitySucksRP systems and configure the build around the owner's gameplay, framework, economy, theme and direction.
 
 - **QBCore Shell — $500**
 - **Zombie Server — $700**
 - **Full RP Server — $850**
-- **30 days Discord support included**
+- **30 days of Discord setup/support included**
+
+**Website:** https://realitysucksrp.github.io/
 
 **Tebex:** https://reality-sucks-rp-webstore.tebex.io/
-
-**Server packages:** https://realitysucksrp.github.io/#packages
 
 **Discord:** https://discord.gg/e9V3rPHySx
 
