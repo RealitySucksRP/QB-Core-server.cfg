@@ -1,72 +1,88 @@
-📘 Beginner Guide
+# QB-Core Server.cfg Beginner Guide
+
+<p align="center">
+  <a href="https://reality-sucks-rp-webstore.tebex.io/"><img src="https://img.shields.io/badge/BROWSE-REALITYSUCKSRP%20TEBEX-ff6a00?style=for-the-badge" alt="Browse RealitySucksRP Tebex Store"></a>
+  <a href="https://realitysucksrp.github.io/#packages"><img src="https://img.shields.io/badge/VIEW-COMPLETE%20SERVER%20PACKAGES-111111?style=for-the-badge" alt="View RealitySucksRP server packages"></a>
+  <a href="https://discord.gg/e9V3rPHySx"><img src="https://img.shields.io/badge/ASK%20ME-DISCORD-5865F2?style=for-the-badge" alt="Join RealitySucksRP Discord"></a>
+</p>
+
+> I build complete FiveM server setups using my own tested systems: shops, weapons, phones, racing, LS Customs, garages, dealerships, zombie apocalypse systems, warfare, Phantom encounters, UI and more. I configure the stack around what the server owner actually wants.
 
 This repository is designed for new FiveM server owners who are just getting started with QB-Core and server configuration.
 
-At first, this file may look overwhelming — that's normal.
+At first, `server.cfg` can look overwhelming. That is normal. It controls how your FiveM server starts, what resources load and how everything connects together.
 
-You are seeing a full server.cfg template, which controls how your FiveM server starts, what resources load, and how everything connects together.
+## What This File Controls
 
-🧠 Important Message for Beginners
+- Server name and branding
+- Player slots
+- FiveM license key
+- Database connection
+- QB-Core load order
+- Scripts, jobs and systems
+- Voice, UI and gameplay resources
 
-If this is your first time setting up a server:
+## What You Must Edit
 
-Don't panic if it feels confusing.
-
-You do NOT need to understand everything at once.
-
-Just follow the structure step-by-step and it will start to make sense over time.
-
-Most people learn this gradually by:
-
-making small changes
-testing the server
-fixing errors as they appear
-⚙️ What This File Does
-
-The server.cfg controls:
-
-Server name and branding
-Player limit (slots)
-License key connection to FiveM
-Database (MySQL / MariaDB)
-Core framework loading order (QB-Core)
-All scripts, jobs, and systems
-Voice, UI, and gameplay features
-📌 What You MUST Edit
-
-Before starting your server, you must change:
-
-Server Name
+### Server Name
+```cfg
 sv_hostname "INSERT SERVER NAME HERE"
-License Key
+```
+
+### License Key
+```cfg
 sv_licenseKey "INSERT LICENSE KEY HERE"
-Database Password
-mysql://root:INSERT_PASSWORD_HERE@127.0.0.1:3306/qbcore
-Optional Password
+```
+
+### Database Password
+```cfg
+mysql_connection_string "mysql://root:INSERT_PASSWORD_HERE@127.0.0.1:3306/qbcore"
+```
+
+### Optional Server Password
+```cfg
 sv_password "INSERT PASSWORD HERE"
-⚠️ Why Structure Matters
+```
 
-The order of resources is very important.
+## Why Load Order Matters
 
-Core resources must load first (qb-core, oxmysql)
-Systems load second (inventory, jobs, housing)
-Addons and extras load last
+Core resources should load first, systems second and addons last.
 
-If the order is wrong, your server may:
+A bad load order can cause resources to fail, dependencies to be missing or the server to behave unpredictably.
 
-crash
-fail to start
-or have missing features
-🚀 Final Note
+Typical structure:
 
-This file is meant to be a learning tool and starting point.
+```cfg
+ensure oxmysql
+ensure qb-core
 
-Take your time, make changes slowly, and test often.
+# Core systems
+ensure qb-inventory
+ensure qb-target
 
-Once you understand this structure, you'll be able to build and customize full FiveM servers with confidence.
+# Jobs / gameplay / custom resources
+ensure your-resource
+```
+
+## Want Me To Build The Server?
+
+I also offer complete server builds using tested RealitySucksRP systems and configure them around the owner's preferred gameplay style and stack.
+
+- **QBCore Shell — $500**
+- **Zombie Server — $700**
+- **Full RP Server — $850**
+- **30 days Discord support included**
+
+**Tebex:** https://reality-sucks-rp-webstore.tebex.io/
+
+**Server packages:** https://realitysucksrp.github.io/#packages
+
+**Discord:** https://discord.gg/e9V3rPHySx
+
+## Final Note
+
+Use this repository as a learning tool and starting point. Make small changes, test often and keep backups before changing a live server.
 
 ---
 
-## Support This Project
-
-<a href='https://ko-fi.com/R6R51XYJ6N' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://storage.ko-fi.com/cdn/kofi2.png?v=6' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
+Made by RealitySucksRP.
