@@ -1,5 +1,13 @@
 # QB-Core Server.cfg Beginner Guide
 
+<!-- RS community links -->
+
+Free FiveM QBCore server.cfg beginner guide covering branding, database setup, dependencies and resource load order.
+
+[Website](https://realitysucksrp.github.io/) | [Tebex Store](https://reality-sucks-rp-webstore.tebex.io/) | [Free Scripts](https://reality-sucks-rp-webstore.tebex.io/category/free-scripts) | [Discord](https://discord.gg/e9V3rPHySx) | [YouTube](https://www.youtube.com/@RealitySucksRP)
+
+<!-- /RS community links -->
+
 <p align="center">
   <a href="https://reality-sucks-rp-webstore.tebex.io/"><img src="https://img.shields.io/badge/BROWSE-REALITYSUCKSRP%20TEBEX-ff6a00?style=for-the-badge" alt="Browse RealitySucksRP Tebex Store"></a>
   <a href="https://realitysucksrp.github.io/#packages"><img src="https://img.shields.io/badge/VIEW-COMPLETE%20SERVER%20PACKAGES-111111?style=for-the-badge" alt="View RealitySucksRP server packages"></a>
