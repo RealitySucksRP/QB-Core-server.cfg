@@ -44,7 +44,7 @@ sv_licenseKey "INSERT LICENSE KEY HERE"
 
 ### Database Password
 ```cfg
-mysql_connection_string "mysql://root:INSERT_PASSWORD_HERE@127.0.0.1:3306/qbcore"
+mysql_connection_string "mysql://DB_USER:DB_PASSWORD@127.0.0.1/DB_NAME?charset=utf8mb4"
 ```
 
 ### Optional Server Password
